@@ -10,7 +10,7 @@ async function bootstrap() {
   if (isProduction) {
     // Configuração CORS para produção
     app.enableCors({
-      origin: '', // Substitua pelo seu domínio de produção
+      origin: 'https://censo-ja1.vercel.app', // Substitua pelo seu domínio de produção
       methods: ['GET', 'POST', 'PUT', 'DELETE'],
       allowedHeaders: ['Content-Type', 'Authorization'],
     });
